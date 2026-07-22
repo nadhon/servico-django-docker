@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda Exclusiva</title>
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<section class="products">
+    <h2>Nossos Produtos</h2>
+
+    <div class="carousel">
+        <button class="nav prev">&#10094;</button>
+
+        <div class="carousel-track">
+
+            <div class="product-card">
+                <img src="{% static 'img/produto1.png' %}" alt="Produto 1">
+                <h3>Notebook Gamer</h3>
+                <p>R$ 4.599,00</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="product-card">
+                <img src="{% static 'img/produto2.png' %}" alt="Produto 2">
+                <h3>Mouse Gamer</h3>
+                <p>R$ 199,90</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="product-card">
+                <img src="{% static 'img/produto3.png' %}" alt="Produto 3">
+                <h3>Teclado Mecânico</h3>
+                <p>R$ 349,90</p>
+                <button>Comprar</button>
+            </div>
+
+        </div>
+
+        <button class="nav next">&#10095;</button>
+    </div>
+</section>
+
+<script src="{% static 'main.js' %}"></script>
+
+</body>
+</html>
